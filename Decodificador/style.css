@@ -1,0 +1,255 @@
+*{
+    background: #e5e5e5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    width: auto;
+}
+
+/*header*/
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.logo{
+    max-width: 700px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    margin-left: 150px;
+}
+
+/*main*/
+main{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+/*Seção do parágrafo principal*/
+.sPrincipal{
+    position: relative;
+}
+
+.sPrincipal h1{
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    color: #0A3871;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.paragrafo-principal{
+    width: auto;
+    text-align: center;
+    padding: 3m 0;
+    margin: 20px 120px 20px 120px;
+    font-style: italic;
+    font-size: 22px;
+}
+
+/*Divisão principal*/
+#divisaoPrincipal{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+    height: 700px;
+    margin: 0 5% 0 5%;
+}
+
+/*Seção da caixa de texto em que será digitado a mensagem a ser codificada*/
+.sMensagem{
+    width: 400px;
+    height: 330px;
+}
+
+#opcaoMetodo, #mSelect{
+    position: absolute;
+    padding: auto;
+    margin: 20px 150px 10px 0px;
+    font-size: 20px;
+}
+/*
+legend{
+    margin-left: 40px ;
+}
+
+#mSelect{
+    justify-content: end;
+    margin-left: 40px;
+    
+}
+*/
+
+.mensagem{
+    width: 700px;
+    height: 330px;
+    color: #0A3871;
+    margin-top: 0px;
+    text-transform: lowercase;
+    background: white;
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40px;
+    box-shadow: none;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.informacao h6{
+    color: #495057;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#btnCript, #btnDescript{
+    margin: 0px 10px 10px 40px;
+}
+
+/*Seção da caixa de texto onde será exibida a mensagem codificada*/
+.sCodificador{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 350px;
+    height: 650px;
+    margin-right: 5%;
+    background: white;
+}
+
+.sCodificador h2{
+    color: #495057;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+}
+
+.sCodificador span{
+    font-size: 16px;
+    text-align: justify;
+    color: #0A3871;
+    padding-left: 10px;
+    margin-left: 20px;
+    text-justify: auto;
+    background: white;
+}
+
+#sTexto{
+    background: white;
+    border-radius: 20px;
+}
+
+.decodifica{
+    height: 350px;
+    background: white;
+    background-image: url(imagem.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: none;
+    color: #0A3871;
+    background-position: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.decodifica:focus{
+    outline: none;
+}
+
+/*Configuração dos botões*/
+.botoes{
+    display: flex;
+    margin-top: 18px;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.botao{
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    text-align: center;
+    background: #0A3871;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width:328px; 
+    height: 67px;
+    cursor: pointer;
+    margin: 4%;
+}
+
+#btnCopia{
+    border: 1px solid orange;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10%;
+    margin-left: 3%;
+    background: orange;
+}
+
+.limpa-tela{
+    width: 700px;
+    margin-left: 30px;
+    padding: 10px 0 0 0;
+    align-items: center;
+}
+
+#btnLimpa{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding-top: auto;
+    padding-left: 130px;
+    background: orange;
+    border: 1px solid orange;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 20px;
+    background: #495057;
+    color: white;
+    font-weight: bold;
+}
+
+.rodape h3{
+    font-size: 16px;
+    background: #495057;
+}
+
+.icons{
+    background: #495057;
+}
+
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+    color: #e5e5e5;
+    background: #495057;
+}
+
+
+
