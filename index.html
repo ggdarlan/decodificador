@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <img src="logo.jpg" alt="Logo do Site" class="logo">
+        </header>
+        <main>
+
+            <section class="sPrincipal">
+                <h1>Decoficador de Mensagens</h1>
+                <div class="paragrafo-principal">
+                    <p>Criptografia em segurança virtual é a conversão de dados de um formato legível em um formato codificado.
+                        Os dados criptografados só podem ser lidos ou processados ​​depois de serem descriptografados.
+                        A criptografia envolve a conversão de texto simples legível por humanos em texto incompreensível, o que é conhecido como texto cifrado.
+                        Essencialmente, isso significa pegar dados legíveis e transformá-los de forma que pareçam aleatórios.
+                        A criptografia envolve o uso de uma chave criptográfica, um conjunto de valores matemáticos com os quais tanto o remetente quanto o destinatário concordam.
+                         O destinatário usa a chave para descriptografar os dados, transformando-os de volta em texto simples legível.</p>
+                </div>
+            </section>
+            <div id="divisaoPrincipal">
+                <section class="sMensagem">
+                    <!--Estou estudando uma forma de usar o select ou botões associado ao if para usar duas ou mais maneiras de criptografia-->
+                    <!--<p id="opcaoMetodo">Escolha o método de criptografia que deseja usar:</p>
+                    <button id="btnAlura" class="botao">Método Alura</button>
+                    <button id="btnAscii" class="botao">Método ASCII</button>-->
+                    
+                        <!--<legend>Escolha o método de criptografia que deseja usar:</legend>
+                        <select id="mSelect" onchange="metodoSelect()">
+                            <option value="m001" selected>Método</option>
+                            <option value="m002">Alura</option>
+                            <option value="m003">Ascii</option>
+                        </select>-->
+                    
+                                        
+                        <textarea name="mensagem" id="mensagem" cols="90" rows="6" placeholder="Digite aqui o seu texto" class="mensagem"></textarea>
+                        
+                        <div class="informacao">
+                            <h6>Apenas letras minúsculas e sem acento.</h6>
+                        </div>
+                        <div class="botoes">
+                            <input type=button value=Criptografar id="btnCript" onClick="criptografa();" class="botao">
+                            <input type=button value=Descriptografar id="btnDescript" onClick="descriptografa();" class="botao">
+                        </div>
+                        <div class="limpa-tela">
+                            <input type=button value=Limpar id="btnLimpa" onClick="limpaTela();" class="botao">
+                        </div>    
+                    
+                </section>
+
+                <section class="sCodificador">
+                        <textarea name="criptografia" id="decodifica" cols="30" rows="15" class="decodifica"></textarea>
+                    <div id="sTexto">
+                        <h2>Sua mensagem aparecerá aqui!</h2>
+                        <span >Digite um texto que deseja criptografar ou descriptografar.</span>
+                        <input type=button value=Copiar id="btnCopia" onClick="copiaTexto();" class="botao">
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script src="script.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <footer class="rodape">
+            <div class="icons">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <h3>Desenvolvido por Darlan Galdino</h3>
+        </footer>
+    </body>
+</html>
